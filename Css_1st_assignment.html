@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS FIRST</title>
+	<Style>
+		body{
+			color: #fff;
+			font-family: 'Nunito Semibold';
+			text-align: center;
+		}
+		#content{
+			display: grid;
+			grid-template-columns: repeat(4,1fr);
+			grid-template-rows: repeat(9,minmax(80px,auto));
+			width: 1500px;
+			height: 1200px;
+			grid-gap:10px;
+			 margin: 0;
+		}
+		.i1{
+			padding: 100px;
+			background: #CD388C;
+			grid-column: 1 / 4;
+
+		}
+		.i2{
+			padding: 100px;
+			background: #BE006C;
+			grid-column: 1/ 3;
+			grid-row: 2/7;
+		}
+		.i3{
+			padding: 100px;
+			background:  #8E0050;
+			grid-row: 2/7;
+			grid-column: 3/ 4;
+		}
+		.i4{
+			padding: 100px;
+			background: #54002F;
+			grid-column: 1 / 4;
+			grid-row: 7/8;
+			
+		}
+	</Style>
+</head>
+<body>
+	<div id="content">
+		<div class="i1"></div>
+		<div class="i2"></div>
+		<div class="i3"></div>
+		<div class="i4"></div>
+	</div>
+</body>
+</html>
